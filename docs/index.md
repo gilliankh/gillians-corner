@@ -1,5 +1,1 @@
-# A web page about star-nosed moles
-
-*Star nose moles* are one of the coolest creatures on the planet, so who wouldn't want to learn about them?
-
-You can read more about them by going to their [Wikipedia page](https://en.wikipedia.org/wiki/Star-nosed_mole).
+![0222-construction](https://github.com/user-attachments/assets/3c00f871-5f7c-4c53-8060-8478369978ee)
