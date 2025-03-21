@@ -4,56 +4,34 @@
     <head>
         <meta charset="utf-8" />
         <title>gillian's gallery</title>
-
+        <link rel="stylesheet" type="text/css" href="exhibitionstyle.css">
+    
         <style>
 
             :root {
-                /*--header-image: url('pinkheader.jpg'); */
-                --body-bg-image: url('whtbrickwallbg.gif');
-                /* colors */
                 --content: #d0687d;
             }
 
-            * {
-                box-sizing: border-box;
-            }
-
             a {
-                color:black;
-                text-decoration:none;
+                color: black;
+                text-decoration: none;
             }
 
                 a:hover {
                     color: hotpink;
-                    font-size: 115%;
                 }
-            
+
             figure {
                 padding: 4px;
                 margin: auto;
+                align-content: center;
             }
 
             figcaption {
-                background-color: black;
-                color: white;
-                font-style: italic;
-                padding: 2px;
+                font-family: 'Courier New', monospace;
                 text-align: center;
-            }
-
-            @font-face {
-                font-family: AppoPaint;
-                src: url('appopaint-Regular.otf');
-            }
-
-            body {
-                font-family: 'AppoPaint', sans-serif;
-                background-color: #08031A;
-                /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 150px;
-                color: black;
-                background-image: var(--body-bg-image);
-            }
+                text-decoration: underline 5px;
+            }   
 
             .row {
                 display: flex;
@@ -73,66 +51,82 @@
                     vertical-align: middle;
                 }
 
-            /* Responsive layout - makes a two column-layout instead of four columns */
-            @media (max-width: 800px) {
-                .column {
-                    flex: 50%;
-                    max-width: 50%;
-                }
-            }
-
-            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-            @media (max-width: 600px) {
-                .column {
-                    flex: 100%;
-                    max-width: 100%;
-                }
-            }
-
         </style>
-
     </head>
 
     <body>
-
         <div id="headerArea">
-            <div id="header">
-
                 <h2>
-                <a href="gallery.html">&lt; Return to home</a>
+                    <a href="gallery.html">&lt; Return to home</a>
                 </h2>
-
-            </div>
         </div>
 
         <div class="row">
             <div class="column">
                 <figure>
-                    <img src="projects/wisewomancover.jpg" alt="Portrait of a Wise Woman cross stitch cover image" style="width:100%">
-                    <figcaption>Portrait of a Wise Woman</figcaption>
+                    <a href="WiseWoman.html">
+                        <img src="projects/wisewomancover.png" alt="Portrait of a Wise Woman cross stitch cover image" style="width:100%">
+                        <figcaption>
+                            <h1>Portrait of a Wise Woman</h1>
+                        </figcaption>
+                        <br />
+                        <br />
+                    </a>
                 </figure>
+
                 <figure>
-                    <img src="projects/ashescover.png" alt="Ashes video cover image" style="width:100%">
-                    <figcaption>Ashes</figcaption>
+                    <a href="LittleBirdie.html">
+                        <img src="projects/littlebirdiecover.png" alt="Little Birdie cover image" style="width:100%">
+                        <figcaption>
+                            <h1>Little Birdie</h1>
+                        </figcaption>
+                        <br />
+                        <br />
+                    </a>
                 </figure>
             </div>
+
             <div class="column">
                 <figure>
-                    <img src="projects/shellcover.jpg" alt="Shell Reflection interactive sculpture cover image" style="width:100%">
-                    <figcaption>Shell Reflection</figcaption>
+                    <a href="ShellReflection.html">
+                        <img src="projects/shellcover.png" alt="Shell Reflection interactive sculpture cover image" style="width:100%">
+                        <figcaption>
+                            <h1>Shell Reflection</h1>
+                        </figcaption>
+                        <br />
+                        <br />
+                    </a>
                 </figure>
+
                 <figure>
-                    <img src="projects/johncover.png" alt="John ascii art interactive story cover image" style="width:100%">
-                    <figcaption>John</figcaption>
+                    <a href="john.html">
+                        <img src="projects/johncover.png" alt="John ascii art interactive story cover image" style="width:100%">
+                        <figcaption>
+                            <h1>John</h1>
+                        </figcaption>
+                    </a>
+                    <br />
+                    <br />
                 </figure>
             </div>
+            
             <div class="column">
                 <figure>
-                    <img src="projects/quiltcover.jpg" alt="You Are So Beautiful quilt cover image" style="width:100%">
-                    <figcaption>You Are So Beautiful</figcaption>
+                    <a href="YouAreSoBeautiful.html">
+                        <img src="projects/quiltcover.png" alt="You Are So Beautiful quilt cover image" style="width:100%">
+                        <figcaption>
+                            <h1>You Are So Beautiful</h1>
+                        </figcaption>
+                    </a>
+                    <br />
+                    <br />
                 </figure>
             </div>
         </div>
 
-        </body>
-    </html>
+        <footer id="footer" style="margin-top: 10px;">
+            <p><strong>made with love</strong></p>
+            <p>I do not give permission for this content to be used for AI training purposes.</p>
+        </footer>
+    </body>
+</html>
