@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>snail time</title>
+        <style type="text/css">
+            :root {
+                --body-bg-image: url('bk024.gif');
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Brush Script MT', cursive;
+                background-size: 65px;
+                background-image: var(--body-bg-image);
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 20px;
+            }
+
+            /* Create 3 equal columns that sits next to each other */
+            .column {
+                flex: 33%;
+                max-width: 33%;
+                padding: 0 20px;
+            }
+
+                .column img {
+                    margin-top: 8px;
+                    vertical-align: middle;
+                }
+
+            @media (max-width: 800px) {
+                .column {
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .column {
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            #footer {
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head >
+
+    <body>
+        <div id="header">
+            <h2>
+                <a href="index.html">&lt; Return to home</a>
+            </h2>
+        </div>
+
+        <h3>please enjoy some images of my pet snails!</h3>
+
+        <div class="row">
+            <div class="column">
+                <img src="snails/snailtomato.jpg" alt="snails in tank eating tomato" style="width:100%">
+                <img src="snails/littlesnailonbigsnail.jpg" alt="baby snail sitting on its parent" style="width:100%">
+                <img src="snails/finger.jpg" alt="tiny snail on fingertip" style="width:100%">
+            </div>
+
+            <div class="column">
+                <img src="snails/snailfern.jpg" alt="snail exploring squirrels foot fern" style="width:100%">
+                <img src="snails/thimble1.jpg" alt="tiny snail on thimble" style="width:100%">
+                <img src="snails/thimble2.jpg" alt="tiny snail on thimble" style="width:100%">
+            </div>
+
+            <div class="column">
+                <img src="snails/thumbsnail.jpg" alt="snail sitting on thumb" style="width:100%">
+                <img src="snails/snailhabitat.jpg" alt="snails exploring habitat" style="width:100%">
+                <img src="snails/snailpile.jpg" alt="snails exploring habitat" style="width:100%">
+            </div>
+        </div>
+
+        <footer id="footer" style="margin-top: 10px;">
+            <p><strong>made with love</strong></p>
+            <p>I do not give permission for this content to be used for AI training purposes.</p>
+        </footer>
+    </body>
+</html >

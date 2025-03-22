@@ -51,16 +51,28 @@
                     vertical-align: middle;
                 }
 
+            @media (max-width: 800px) {
+                .column {
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .column {
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
         </style>
     </head>
 
     <body>
         <div id="headerArea">
                 <h2>
-                    <a href="gallery.html">&lt; Return to home</a>
+                    <a href="index.html">&lt; Return to home</a>
                 </h2>
         </div>
-
         <div class="row">
             <div class="column">
                 <figure>

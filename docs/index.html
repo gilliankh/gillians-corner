@@ -2,316 +2,302 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-    <meta charset="utf-8" />
-    <title>gillian's corner</title>
+    <head>
+        <meta charset="utf-8" />
+        <title>gillian's corner</title>
 
-    <style type="text/css">
-        /* user styles */
+        <style type="text/css">
+            /* user styles */
 
 
-        :root {
-            /*--header-image: url('pinkheader.jpg'); */
-            --body-bg-image: url('prrbg.gif');
-            /* colors */
-            --content: #d0687d;
-        }
+            :root {
+                /*--header-image: url('pinkheader.jpg'); */
+                --body-bg-image: url('prrbg.gif');
+                /* colors */
+                --content: #d0687d;
+            }
 
-        /* if you have the URL of a font, you can set it below */
+            /* if you have the URL of a font, you can set it below */
 
         
-        @font-face {
-            font-family: Nunito;
-            src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
-        }
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+            }
 
-        @font-face {
-            font-family: Nunito;
-            src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-            font-weight: bold;
-        }
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+                font-weight: bold;
+            }
 
-        @font-face {
-            font-family: Nunito;
-            src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-            font-style: italic;
-        }
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+                font-style: italic;
+            }
 
-        @font-face {
-            font-family: Nunito;
-            src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-            font-style: italic;
-            font-weight: bold;
-        }
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+                font-style: italic;
+                font-weight: bold;
+            }
 
-        body {
-            font-family: 'Nunito', sans-serif;
-            margin: 0;
-            background-color: #08031A;
-            /* you can delete the line below if you'd prefer to not use an image */
-            background-size: 65px;
-            color: #fff;
-            background-image: var(--body-bg-image);
-        }
+            body {
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+                background-color: #08031A;
+                /* you can delete the line below if you'd prefer to not use an image */
+                background-size: 65px;
+                color: #fff;
+                background-image: var(--body-bg-image);
+            }
 
-        * {
-            box-sizing: border-box;
-        }
+            * {
+                box-sizing: border-box;
+            }
 
-         /* below this line is CSS for the layout */
+            /* below this line is CSS for the layout */
 
 
-         /* the "container" is what wraps your entire website */
-         /*if you want something (like the header) to be Wider than
-          the other elements, you will need to move that div outside
-          of the container 
-         */
-        #container {
-            max-width: 900px;
-            /* this is the width of your layout! */
-            /* if you change the above value, scroll to the bottom
-            and change the media query according to the comment! */
-            margin: 0 auto;
-            /* this centers the entire page */
-        }
+            /* the "container" is what wraps your entire website */
+            /*if you want something (like the header) to be Wider than
+            the other elements, you will need to move that div outside
+            of the container 
+            */
+            #container {
+                max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+                and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
 
             /* the area below is for all links on your page
-          EXCEPT for the navigation */
-            #container a {
-                color: #687dd0;
-                font-weight: bold;
-                /* if you want to remove the underline
-            you can add a line below here that says:
-            text-decoration:none; */
-            }
-
-        #header {
-            width: 100%;
-            background-color: #3D4051;
-            /* header color here! */
-            height: 100px;
-            /* this is only for a background image! */
-            background-image: var(--header-image);
-            background-size: 100%;
-        }
-
-        /* navigation section!! */
-        #navbar {
-            height: 40px;
-            background-color: #AB364D;
-            /* navbar color */
-            width: 100%;
-        }
-
-            #navbar ul {
-                display: flex;
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-                justify-content: space-evenly;
-            }
-
-            #navbar li {
-                padding-top: 10px;
-            }
-
-                /* navigation links*/
-                #navbar li a {
-                    color: #ffffff;
-                    /* navbar text color */
-                    font-weight: 800;
-                    text-decoration: none;
-                    /* this removes the underline */
+            EXCEPT for the navigation */
+                #container a {
+                    color: #687dd0;
+                    font-weight: bold;
+                    /* if you want to remove the underline
+                    you can add a line below here that says:
+                    text-decoration:none; */
                 }
 
-                    /* navigation link when a link is hovered over */
-                    #navbar li a:hover {
-                        color: #0A0A0A;
-                        text-decoration: underline;
-                    }
-
-        #flex {
-            display: flex;
-        }
-
-        /* this colors BOTH sidebars
-        if you want to style them separately,
-        create styles for #leftSidebar and #rightSidebar */
-        aside {
-            background-color: #3D4051;
-            width: 200px;
-            padding: 20px;
-            font-size: smaller;
-            /* this makes the sidebar text slightly smaller */
-        }
-
-
-        /* this is the color of the main content area,
-          between the sidebars! */
-        main {
-            background-color: #3D4051;
-            flex: 1;
-            padding: 20px;
-            order: 2;
-        }
-
-        /*if you're using both sidebars, the "order" value
-          tells the CSS the order in which to display them.
-          left sidebar is 1, content is 2, and right sidebar is 3! */
-
-        #leftSidebar {
-            order: 1;
-        }
-
-        #rightSidebar {
-            order: 3;
-        }
-
-        footer {
-            background-color: #AB364D;
-            width: 100%;
-            height: 40px;
-            padding: 10px;
-            text-align: center;
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: #FAE1E6;
-        }
-
-        h1 {
-            color: white;
-            font-size: 35px;
-            text-shadow: 2px 2px #AB364D;
-        }
-
-        strong {
-            /* this styles bold text */
-            color: white;
-            text-shadow: 2px 2px #AB364D;
-        }
-
-        /* this is just a cool box, it's the darker colored one */
-        .box {
-            background-color: #13092D;
-            border: 1px solid #FAE1E6;
-            padding: 10px;
-        }
-
-        /* CSS for extras */
-
-        #topBar {
-            width: 100%;
-            height: 30px;
-            padding: 10px;
-            font-size: smaller;
-            background-color: #13092D;
-        }
-
-
-        /* BELOW THIS POINT IS MEDIA QUERY */
-
-        /* so you wanna change the width of your page?
-          by default, the container width is 900px.
-          in order to keep things responsive, take your new height,
-          and then subtrack it by 100. use this new number as the
-          "max-width" value below
-          */
-
-        @media only screen and (max-width: 800px) {
-            #flex {
-                flex-wrap: wrap;
+            #header {
+                width: 100%;
+                background-color: #3D4051;
+                height: 100px;
+                /* this is only for a background image! */
+                background-image: var(--header-image);
+                background-size: 100%;
             }
 
-            aside {
+            /* navigation section!! */
+            #navbar {
+                height: 40px;
+                background-color: #AB364D;
+                /* navbar color */
                 width: 100%;
             }
 
-            main {
-                order: 1;
+                #navbar ul {
+                    display: flex;
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+                    justify-content: space-evenly;
+                }
+
+                #navbar li {
+                    padding-top: 10px;
+                }
+
+                    /* navigation links*/
+                    #navbar li a {
+                        color: #ffffff;
+                        /* navbar text color */
+                        font-weight: 800;
+                        text-decoration: none;
+                        /* this removes the underline */
+                    }
+
+                        /* navigation link when a link is hovered over */
+                        #navbar li a:hover {
+                            color: #0A0A0A;
+                            text-decoration: underline;
+                        }
+
+            #flex {
+                display: flex;
             }
 
-            #leftSidebar {
+            /* this colors BOTH sidebars
+            if you want to style them separately,
+            create styles for #leftSidebar and #rightSidebar */
+            aside {
+                background-color: #3D4051;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+
+            /* this is the color of the main content area,
+            between the sidebars! */
+            main {
+                background-color: #3D4051;
+                flex: 1;
+                padding: 20px;
                 order: 2;
+            }
+
+            /*if you're using both sidebars, the "order" value
+            tells the CSS the order in which to display them.
+            left sidebar is 1, content is 2, and right sidebar is 3! */
+
+            #leftSidebar {
+                order: 1;
             }
 
             #rightSidebar {
                 order: 3;
             }
 
-            #navbar ul {
-                flex-wrap: wrap;
+            footer {
+                background-color: #AB364D;
+                width: 100%;
+                padding: 3px;
+                text-align: center;
             }
-        }
-    </style>
 
-</head>
+            h1,
+            h2,
+            h3 {
+                color: #FAE1E6;
+            }
 
-<body>
+            h1 {
+                color: white;
+                font-size: 35px;
+                text-shadow: 2px 2px #AB364D;
+            }
 
-    <div id="container">
-        <div id="headerArea">
-            <div id="header">
+            strong {
+                /* this styles bold text */
+                color: white;
+                text-shadow: 2px 2px #AB364D;
+            }
 
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: #13092D;
+                border: 1px solid #FAE1E6;
+                padding: 10px;
+            }
+
+            /* CSS for extras */
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page?
+            by default, the container width is 900px.
+            in order to keep things responsive, take your new height,
+            and then subtrack it by 100. use this new number as the
+            "max-width" value below
+            */
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="headerArea">
+                <div id="header">
+                </div>
+
+                <nav id="navbar" style="margin-bottom: 10px;">
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="snails.html">Snails</a></li>
+                        <li><a href="https://www.windows93.net/" target="_blank">Mystery Link</a></li>
+                    </ul>
+                </nav>
             </div>
 
-            <nav id="navbar" style="margin-bottom: 10px;">
-                <ul>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#">Snails</a></li>
-                    <li><a href="#">Snails</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div id="flex">
+                <aside id="leftSidebar" style="margin-right: 10px;">
+                    <h2>interesting things</h2>
+                    <div class="box">
+                        <ul style="padding-left:10px;">
+                            <li><a href="https://blinkies.cafe/" target="_blank">blinkies.cafe</a> - make your own blinkies</li>
+                            <li><a href="https://make-everything-ok.com/" target="_blank">make everything okay</a></li>
+                            <li><a href="https://www.photopea.com/" target="_blank">photopea</a> - free photoshop alternative</li>
+                            <li><a href="https://www.zalgo.com/" target="_blank">ZOMBO</a></li>
+                        </ul>
+                        <img src="x-mao6.gif" alt="cat looking up">
+                    </div>
+                    <br>
+                    <a href="snails.html">
+                        <img src="detritivores_blinkie.gif" alt="friend of detritivores" width="150" height="20">
+                    </a>
 
-        <div id="flex">
-            <aside id="leftSidebar" style="margin-right: 10px;">
-                <h2>interesting things</h2>
-                <div class="box">
-                    <ul style="padding-left:10px;">
-                        <li><a href="https://blinkies.cafe/">blinkies.cafe</a> - make your own blinkies</li>
-                        <li><a href="https://make-everything-ok.com/">make everything okay</a></li>
-                        <li><a href="https://www.photopea.com/">photopea</a> - free photoshop alternative</li>
-                        <li><a href="https://www.zalgo.com/">ZOMBO</a></li>
+                    <h3>site building resources</h3>
+                    <ul>
+                        <li>
+                            <a href="https://goblin-heart.net/sadgrl/" target="_blank">sadgrl.online</a>
+                        </li>
+                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                        <li><a href="https://heardlibrary.github.io/digital-scholarship/manage/control/github/" target="_blank">Vanderbilt Libraries Digital Lab (for github pages)</a></li>
+                        <li><a href="https://happycoding.io/tutorials/html/github-pages#add-an-html-file" target="_blank">happycoding.io</a></li>
                     </ul>
-                    <img src="x-mao6.gif" alt="cat looking up">
-                </div>
-                <br>
-
-                <a href="snails.html">
-                    <img src="detritivores_blinkie.gif" alt="friend of detritivores" width="150" height="20">
-                </a>
-
-                <h3>site building resources</h3>
-                <ul>
-                    <li>
-                        <a href="https://goblin-heart.net/sadgrl/" target="_blank">sadgrl.online</a>
-                    </li>
-                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
-                    <li><a href="https://heardlibrary.github.io/digital-scholarship/manage/control/github/" target="_blank">Vanderbilt Libraries Digital Lab (for github pages)</a></li>
-                    <li><a href="https://happycoding.io/tutorials/html/github-pages#add-an-html-file" target="_blank">happycoding.io</a></li>
-                </ul>
-            </aside>
-            <main>
-                <h1>welcome!</h1>
-                <p><strong>this is my homepage!</strong></p>
-                <p>I am a multimedia artist. Check out <a href="gallery.html">the gallery</a> to see some of my projects.</p>
-                <p></p>
-                <p></p>
-                <p></p>
-
-            </main>
-
+                </aside>
+                <main>
+                    <h1>welcome!</h1>
+                    <p><strong>this is my homepage!</strong></p>
+                    <p>I am a multimedia artist. Check out <a href="gallery.html">the gallery</a> to see some of my projects.</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </main>
+            </div>
+            <footer id="footer" style="margin-top: 5px;">
+                <p><strong>made with love</strong></p>
+                <p>I do not give permission for this content to be used for AI training purposes.</p>
+            </footer>
         </div>
-        <footer id="footer" style="margin-top: 10px;">
-            <p><strong>made with love</strong></p>
-            <p>I do not give permission for this content to be used for AI training purposes.</p>
-        </footer>
-    </div>
-</body>
-
-
+    </body>
 </html>
