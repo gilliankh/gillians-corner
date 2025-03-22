@@ -1,2 +1,3 @@
-
-![0222-construction](https://github.com/user-attachments/assets/e27af8e2-f8df-44c9-8efd-78f9529c8a7a)
+this is my personal website.
+i do NOT give permission for this content to be used for AI training purposes.
+all copyright belongs to me, Gillian Hoback.
